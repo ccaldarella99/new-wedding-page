@@ -82,6 +82,13 @@ img {
 	color: #fff;
 }
 
+#line {
+	width: 33%;
+	margin: 10px auto;
+	border-bottom: 3px solid white;
+	background-color:#fff;
+}
+
 #second-cell {
 	background-color:#fff;
 	width:100%;
@@ -187,25 +194,20 @@ img {
 
 .arrow-btn {
 	background-color: #2a4252;
-	height:30px;
-	width:30px;
+	height:2.1em;
+	width:2.1em;
 	border-radius: 50%;
 	display:inline-block;
 	margin: 0 20px 10px 20px;
 }
 
-.arrow-btn:clicked {
-	
+#left-btn, #right-btn {
+	color: #fff;
+	font-size: 1.5em;
 }
 
-#line {
-	position: relative;
-	line-height: 10em;
-	font-size: 10em
-	width: 33%;
-	margin: 0 auto 0 auto;
-	display: inline;
-	border-bottom: 20px solid white;
+.l-btn:clicked + .l-btn:after {
+	visibility: hidden;
 }
 
 #times {
