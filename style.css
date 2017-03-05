@@ -1,0 +1,310 @@
+
+html, h1, h2, h3, p, a, ul, li {
+  font-family: Arial;
+  font-size: 16px;
+  line-height:18px;
+  padding:0;
+  margin:0;
+  color: #333;
+}
+
+h1 {
+  font-size:7em;
+  line-height:1em;
+  text-align: center;
+  font-family: Alex Brush, Lobster, Arial;
+  color: #fff;
+}
+
+h2 {
+  font-size:1.7em;
+  line-height:1.7em;
+  margin: 15px 0px 5px 10px;
+  font-weight:bold;
+}
+
+h3 {
+  font-size:1.5em;
+  line-height:1.5em;
+}
+
+li {
+  position:relative;
+  margin-left: 50px;
+  padding-left: 0px;
+}
+
+li+ul li {
+  position:relative;
+  margin-left: 80px;
+}
+
+a {
+  color: #888;
+}
+
+p {
+	margin: 10px;
+}
+
+body {
+	background: #2a4252 url('res/scarborough-1.jpg') no-repeat right top;
+}
+
+
+img {
+  max-width:90%;
+  padding-left: 30px;
+}
+
+#content {
+	position:relative;
+	top: 150px;
+	padding: 75px auto 50px auto;
+}
+
+#first-cell {
+	width:100%;
+	height: 450px;
+}
+
+#our-names {
+	font-family: Arial, Serif;
+	padding: 0 auto 0 auto;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 2.2em;
+	font-size: 2.2em
+}
+
+#first-cell h1 {
+	color: #fff;
+}
+
+#second-cell {
+	background-color:#fff;
+	width:100%;
+	display:inline-block;;
+}
+
+#met {
+	position:relative;
+	display:inline-block;
+}
+
+#proposal {
+	position:relative;
+	display:inline-block;
+}
+
+#third-cell {
+	position:relative;
+	top: -5px;
+	background: url('res/birds.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	display:inline-block;
+}
+
+#third-box {
+	background-color: #fff;
+	margin: 10% 15%;
+	padding: 25px 8%;
+	display:inline-block;
+}
+
+#fourth-cell {
+	position:relative;
+	top: -5px;
+	background-color:#fff;
+	width:100%;
+	display:inline-block;;
+}
+
+#fourth-box {
+	background-color: #fff;
+	margin: 0 15%;
+	padding: 0 8%;
+	display:inline-block;
+}
+
+#fourth-box p {
+	padding: 20px;
+}
+
+#fifth-cell {
+	margin: 0 auto;
+	padding: 0 auto;
+	position:relative;
+	display:inline-block;
+}
+
+#fifth-box {
+	margin: 0 15%;
+	padding: 0 8%;
+	display:inline-block;
+}
+
+#fifth-cell p{
+	text-align:center;
+	color: #fff;
+}
+
+.footer{
+	margin: 15px;
+	text-align:center;
+	color: #fff;
+	font-family: Verdana, Serif;
+	font-size:1.5em;
+}
+
+#heart {
+	height: 28px;
+}
+
+#img-reel {
+	margin: 20px auto;
+	padding: 20px auto;
+	height: 250px;
+}
+
+.reel {
+	text-align:center;
+	transition: height 0.5s ease;
+	height: 200px;
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+.reel:hover {
+	height:220px;
+}
+
+.reel:clicked {
+}
+
+.arrow-btn {
+	background-color: #2a4252;
+	height:30px;
+	width:30px;
+	border-radius: 50%;
+	display:inline-block;
+	margin: 0 20px 10px 20px;
+}
+
+.arrow-btn:clicked {
+	
+}
+
+#line {
+	position: relative;
+	line-height: 10em;
+	font-size: 10em
+	width: 33%;
+	margin: 0 auto 0 auto;
+	display: inline;
+	border-bottom: 20px solid white;
+}
+
+#times {
+	margin: 2% auto;
+	padding: 2% auto;
+	border-bottom: thick solid #333;
+}
+
+.btn {
+	border: 1px solid #888;
+	padding: 10px 0;
+	width: 300px;
+}
+
+.btn:hover {
+	border: 2px solid #333;
+}
+
+.first {
+	margin-top: 5%;
+}
+
+.last {
+	margin-bottom: 10%;
+}
+
+.h-center {
+	text-align: center;
+}
+
+.h-center p {
+	color: #fff;
+}
+
+.about-us {
+	padding: 25px 15%;
+	display:block;
+}
+
+.us-pic {
+	width:20%;
+}
+
+.us-text {
+	padding: 25px;
+	width:80%;
+}
+
+.f-left {
+	display:inline;
+	float:left;
+}
+
+.f-right {
+	display:inline;
+	float:right;
+}
+
+.round {
+	border-radius: 50%;
+}
+
+
+@media screen and (max-width:780px) {
+  h1 {
+    font-size:7.5em;
+    line-height:1em;
+  }
+}
+
+@media screen and (max-width:640px) {
+  h1 {
+    font-size:5.7em;
+    line-height:1em;
+  }
+}
+
+@media screen and (max-width:480px) {
+  h1 {
+    margin: 10px auto 0 auto;
+    font-size:4em;
+    line-height:1em;
+  }
+  h2 {
+    font-size:1.2em;
+    line-height:1em;
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-size:0.8em;
+    line-height:0.8em;
+  }
+}
+
+@media screen and (max-width:340px) {
+  h1 {
+    margin: 10px auto 0 auto;
+    font-size:2em;
+    line-height:1em;
+  }
+ }
