@@ -105,6 +105,14 @@ img {
 	display:inline-block;
 }
 
+#met p::first-letter {
+	font-size:1.2em;
+}
+
+#proposal p::first-letter {
+	font-size:1.2em;
+}
+
 #third-cell {
 	position:relative;
 	top: -5px;
@@ -119,6 +127,37 @@ img {
 	margin: 10% 15%;
 	padding: 25px 8%;
 	display:inline-block;
+}
+
+#met, #proposal{
+	transition: opacity 1.5s ease;
+	height: 465px;
+	opacity:0;
+}
+
+#met.active, #proposal.active {
+	opacity:1;
+}
+
+.arrow-btn {
+	cursor: pointer;
+	background-color: #588;
+	height:2.1em;
+	width:2.1em;
+	border-radius: 50%;
+	margin: 0 20px 10px 20px;
+	display:inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.arrow-btn.active, .arrow-btn:hover {
+	background-color: #2a4245;
+}
+
+#left-btn, #right-btn {
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.5em;
 }
 
 #fourth-cell {
@@ -192,28 +231,27 @@ img {
 .reel:clicked {
 }
 
-.arrow-btn {
-	background-color: #2a4252;
-	height:2.1em;
-	width:2.1em;
-	border-radius: 50%;
-	display:inline-block;
-	margin: 0 20px 10px 20px;
-}
-
-#left-btn, #right-btn {
-	color: #fff;
-	font-size: 1.5em;
-}
-
-.l-btn:clicked + .l-btn:after {
-	visibility: hidden;
-}
-
 #times {
 	margin: 2% auto;
 	padding: 2% auto;
 	border-bottom: thick solid #333;
+}
+
+.item-overlay {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background: #000;
+	opacity: 0.5;
+	width: 100%;
+	-moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+	-webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+	transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+	top:100%;
+	z-index:-100;
+	display:none;
 }
 
 .btn {
