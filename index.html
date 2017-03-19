@@ -32,7 +32,7 @@
 		<div id="second-cell">
 			<div class="about-us first">
 				<div class="us-pic f-left">
-					<img class="round" src="res/glenn.jpg" />
+					<img class="round" id="bg" src="res/glenn-1.jpg" />
 				</div>
 				<div class="us-text f-right">
 					<h3>The Bride</h3>
@@ -55,7 +55,7 @@
 					</p>
 				</div>
 				<div class="us-pic f-right">
-					<img class="round" src="res/chris.jpg" />
+					<img class="round" id="bg" src="res/chris.jpg" />
 				</div>
 			</div>
 		</div>
@@ -79,19 +79,24 @@
 						<p>
 							In July 2016, Chris and Glenn took a trip to Maine to visit Glenn's family. After the first day, Chris kept asking Glenn to make sure they would have a day to themselves checking out Glenn's favorite parts in the area. July 8th was a rainy, foggy day, but Chris was determined to start the day hiking around Mackworth Island. That should have been Glenn's first clue. If you know Chris, that sounds like one of the last things he would willingly do. 
 						</p>
-						<p>
-							We started the day at Mackworth Island, then headed over to Portland Headlight, grabbed lobster rolls at a diner, then finished the day at Scarborough Beach. Glenn grew up going to Scarborough beach not just in the summers, but year round. Needless to say, Glenn had a lot of great memories on that beach. 
-						</p>
+						<p class="last">
+							We started the day at Mackworth Island, then headed over to Portland Headlight, grabbed lobster rolls at a diner, then finished the day at Scarborough Beach. Glenn grew up going to Scarborough beach not just in the summers, but year round. Needless to say, Glenn had a lot of great memories on that beach.  (continued... &#8680;)
+							</p>
+					</div>
+					<div id="proposal" class="text-slides fade">
+						<h2 class="h-center">The Proposal</h2>
+						<p> (...continued) </p>
 						<p class="last">
 							After walking down the beach for a bit, Chris started to get down on one knee. Glenn started to try and help Chris help since she thought he was hurt. After realizing that was not the case, Chris very nervously asked Glenn to marry him and according to Chris, Glenn just stared at him with a terrified look. This is probably when Glenn blacked out. After finally snapping out of it, Glenn said "Yes!" while crying. After 15 minutes of crying happy tears and hugging, Glenn finally took a look at the beautiful family ring that came from Chris's grandmother, Rose LoSchiavo. Chris wasn't sure what size ring Glenn was, but when Glenn put it on, it fit perfectly.
 						</p>
 					</div>
 				</div>
+				<div id="showThisNONE"></div>
 				<div class="third-btn h-center">
-						<div class="arrow-btn l-btn" onclick="metProposal(1)">
+						<div class="arrow-btn l-btn" onclick="metProposal(-1)">
 							<label id="left-btn">&#10094;</label>
 						</div>
-						<div class="arrow-btn r-btn" onclick="metProposal(2)">
+						<div class="arrow-btn r-btn" onclick="metProposal(1)">
 							<label for="proposal" id="right-btn">&#10095;</label>
 						</div>
 				</div>
@@ -114,12 +119,12 @@
 				</p>
 			</div>
 			<div class="h-center last">
-				<a href="javascript:void(0)" class="btn" onclick="openOverlay('lodging','lodging-contents');">
+				<a href="javascript:void(0)" class="btn" onclick="openOverlay('lodging','lodging-contents', -1);">
 					<strong>
 						VIEW LODGING
 					</strong>
 				</a>
-				<div class="overlay" onclick="closeOverlay('lodging','lodging-contents');" id="lodging">
+				<div class="overlay" id="lodging">
 					<a href="javascript:void(0)" class="close-btn" onclick="closeOverlay('lodging','lodging-contents');">&times;</a>
 					<div class="item-overlay2" id="lodging-contents">
 						<h2>Hotels</h2>
@@ -130,6 +135,7 @@
 							<li><a href="http://www.doubletreeportland.com/" target="_blank">DoubleTree by Hilton Hotel Portland</a></li>
 							<li><a href="http://www.acehotel.com/portland" target="_blank">Ace Hotel</a></li>
 						</ul>
+						<p id="few"> (And more in South Portland) </p>
 					</div>
 
 				</div>
@@ -150,12 +156,34 @@
 				</p>
 			</div>
 			<div id="img-reel" class="h-center">
-				<img class="reel" src="res/sanddunes.jpg" />
-				<img class="reel" src="res/tacoboutit.jpg" />
-				<img class="reel" src="res/engagement.jpg" />
-				<img class="reel" src="res/bobnlinda.jpg" />
-				<img class="reel" src="res/lighthouse.jpg" />
+				<img class="reel" src="res/sanddunes.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 0);" />
+				<img class="reel" src="res/tacoboutit.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 1);" />
+				<img class="reel" src="res/engagement.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 2);" />
+				<img class="reel" src="res/bobnlinda.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 3);" />
+				<img class="reel" src="res/lighthouse.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 4);" />
 			</div>
+			<div class="overlay" id="slideshow">
+				<a href="javascript:void(0)" class="close-btn" onclick="closeOverlay('slideshow','slideshow-contents');">&times;</a>
+				<div class="item-overlay" id="slideshow-contents">
+					<div class="ssLeft l-btn" onclick="slideShow(-1)">
+						<label id="left-btn">&#10094;</label>
+					</div>
+					
+					<img class="slide-img" src="res/sanddunes.jpg" />
+					<img class="slide-img" src="res/tacoboutit.jpg" />
+					<img class="slide-img" src="res/engagement.jpg" />
+					<img class="slide-img" src="res/bobnlinda.jpg" />
+					<img class="slide-img" src="res/lighthouse.jpg" />
+					
+					<div class="ssRight r-btn" onclick="slideShow(1)">
+						<label id="right-btn">&#10095;</label>
+					</div>
+					<p id="escape">
+						(press escape to exit)
+					</p>
+				</div>
+			</div>
+				
 			<div class="h-center">
 				<p class="last footer">
 					<img id="heart" src="res/Heart-white.png" /> The future Mr. & Mrs. Caldarella
