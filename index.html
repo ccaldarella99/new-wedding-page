@@ -37,9 +37,6 @@
 				<div class="us-text f-right">
 					<h3>The Bride</h3>
 					<p>
-						Glenn once thought that Van Morrison was black. She found out that he was not and was very disappointed. At least this is what her facebook profile claims.
-					</p>
-					<p>
 						A beautiful, thoughtful, and generous woman, Glenn loves hiking and all things furry including her (not-so-much-of-a) puppy Ranger. Her enormous heart and her no-nonsense attitude makes her an amazing daughter, sister, as well as a great friend to many and I am lucky to have the honor of marrying her.
 					</p>
 					<p>
@@ -117,16 +114,25 @@
 				</p>
 			</div>
 			<div class="h-center last">
-				<a href="#" class="btn">
+				<a href="javascript:void(0)" class="btn" onclick="openOverlay('lodging','lodging-contents');">
 					<strong>
 						VIEW LODGING
 					</strong>
-					<div class="item-overlay">
-						<a href="#" target="_blank">
-							<img src="glenn.jgp">
-						</a>
-					</div>
 				</a>
+				<div class="overlay" onclick="closeOverlay('lodging','lodging-contents');" id="lodging">
+					<a href="javascript:void(0)" class="close-btn" onclick="closeOverlay('lodging','lodging-contents');">&times;</a>
+					<div class="item-overlay2" id="lodging-contents">
+						<h2>Hotels</h2>
+						<p id="few">(Here are a few)</p>
+						<ul>
+							<li><a href="http://www.marriott.com/hotels/travel/pdxpc-courtyard-portland-city-center/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">Courtyard Portland City Center</a> - We will be staying here</li>
+							<li><a href="http://www.marriott.com/hotels/travel/pdxpd-residence-inn-portland-downtown-pearl-district/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">Residence Inn Portland Downtown/Pearl District</a></li>
+							<li><a href="http://www.doubletreeportland.com/" target="_blank">DoubleTree by Hilton Hotel Portland</a></li>
+							<li><a href="http://www.acehotel.com/portland" target="_blank">Ace Hotel</a></li>
+						</ul>
+					</div>
+
+				</div>
 			</div>
 		</div>
 		<div id="fifth-cell h-center">

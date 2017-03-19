@@ -21,6 +21,12 @@ function metProposal(n) {
 	}
 }
 
-function clickLodging() {
-	
+function openOverlay(item, content) {
+	document.getElementById(content).style.display = "block";
+	document.getElementById(item).style.width = "100%";
+}
+
+function closeOverlay(item, content) {
+	document.getElementById(content).style.display = "none";
+	document.getElementById(item).style.width = "0%";
 }

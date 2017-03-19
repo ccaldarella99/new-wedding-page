@@ -48,13 +48,19 @@ p {
 }
 
 body {
-	background: #2a4252 url('res/scarborough-1.jpg') no-repeat right top;
+	background: #2a4252 url('res/bg-img-beach.jpg') no-repeat right top;
+/*	background: #2a4252 url('res/scarborough-1.jpg') no-repeat right top;
+	background: #2a4252 url('res/borrestranda-beach4.jpg') no-repeat right top;*/
 }
 
 
 img {
   max-width:90%;
   padding-left: 30px;
+}
+
+img:hover {
+	cursor:pointer;
 }
 
 #content {
@@ -75,7 +81,7 @@ img {
 	display: block;
 	text-align: center;
 	line-height: 2.2em;
-	font-size: 2.2em
+	font-size: 2.4em
 }
 
 #first-cell h1 {
@@ -237,6 +243,58 @@ img {
 	border-bottom: thick solid #333;
 }
 
+
+.overlay {
+	height: 100%;
+	width: 0%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color:rgb(0,0,0);
+	background-color:rgba(0,0,0,0.7);
+	transition: 0.5s;
+}
+
+.item-overlay2 {
+	position: relative;
+	top: 25%;
+	width: 325px;
+	margin: 0 auto;
+	padding: 20px 70px 70px 10px;
+	background-color: #fff;
+	text-align:left;
+}
+
+#lodging-contents {
+	display:none;
+}
+
+.close-btn, .close-btn:link {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.close-btn:hover, .close-btn:active{
+	text-decoration:none;
+	color: #fff;
+}
+
+#few {
+	color: #000;
+	margin-left: 30px;
+}
+
+.item-overlay2 a {
+	color: #333;
+}
+
+.item-overlay2 h2 {
+	text-align: center;
+}
+
 .item-overlay {
 	position:absolute;
 	top:0;
@@ -254,14 +312,19 @@ img {
 	display:none;
 }
 
+
+
+
 .btn {
 	border: 1px solid #888;
 	padding: 10px 0;
 	width: 300px;
+	margin:1px;
 }
 
 .btn:hover {
 	border: 2px solid #333;
+	margin:0px;
 }
 
 .first {
