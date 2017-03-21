@@ -45,6 +45,9 @@
 				</div>
 			</div>
 			<div class="about-us">
+				<div class="us-pic f-right" id="show-sm">
+					<img class="round" id="bg" src="res/chris.jpg" />
+				</div>
 				<div class="us-text f-left">
 					<h3>The Groom</h3>
 					<p>
@@ -54,7 +57,7 @@
 						As someone who loves music, Christopher also likes to read and tinker with computers. As the last child of three siblings, Christopher has definitely established a unique sense of humor that he hopes Glenn appreciates.
 					</p>
 				</div>
-				<div class="us-pic f-right">
+				<div class="us-pic f-right" id="show-lg">
 					<img class="round" id="bg" src="res/chris.jpg" />
 				</div>
 			</div>
@@ -156,11 +159,15 @@
 				</p>
 			</div>
 			<div id="img-reel" class="h-center">
-				<img class="reel" src="res/sanddunes.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 0);" />
-				<img class="reel" src="res/tacoboutit.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 1);" />
-				<img class="reel" src="res/engagement.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 2);" />
-				<img class="reel" src="res/bobnlinda.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 3);" />
-				<img class="reel" src="res/lighthouse.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 4);" />
+				<div id="top-row">
+					<img class="reel" src="res/sanddunes.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 0);" />
+					<img class="reel" src="res/tacoboutit.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 1);" />
+					<img class="reel" src="res/engagement.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 2);" />
+				</div>
+				<div id="bottom-row">
+					<img class="reel" src="res/bobnlinda.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 3);" />
+					<img class="reel" src="res/lighthouse.jpg" onclick="openOverlay('slideshow', 'slideshow-contents', 4);" />
+				</div>
 			</div>
 			<div class="overlay" id="slideshow">
 				<a href="javascript:void(0)" class="close-btn" onclick="closeOverlay('slideshow','slideshow-contents');">&times;</a>
