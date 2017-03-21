@@ -353,6 +353,11 @@ body {
 	border-radius: 50%;
 }
 
+#show-sm {
+	width:0%;
+	display:none;
+}
+
 #bg {
 	max-width:90%;
 }
@@ -391,12 +396,52 @@ body {
 	display:none;
 }
 
+#top-row, #bottom-row {
+	display: inline-block;
+}
 
 
-@media screen and (max-width:780px) {
+
+@media screen and (max-width:935px) {
+  #top-row, #bottom-row {
+	display: block;
+  }
+  .footer {
+	position: relative;
+	top: 175px;
+  }
+}
+
+
+@media screen and (max-width:775px) {
   h1 {
     font-size:7.5em;
     line-height:1em;
+  }
+
+  #third-box {
+	height:600px;
+	margin: 10% 10%;
+	padding: 25px 6%;
+  }
+  
+  .arrow-btn {
+	position:relative;
+	top:50px;
+  }
+  
+  .reel {
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+  }
+
+  .footer {
+	position: relative;
+	top: 800px;
+  }
+  .slide-img {
+	max-width: 85%;
   }
 }
 
@@ -404,6 +449,31 @@ body {
   h1 {
     font-size:5.7em;
     line-height:1em;
+  }
+
+  #third-box {
+	height:700px;
+	margin: 10% 10%;
+	padding: 25px 6%;
+  }
+  
+  .arrow-btn {
+	position:relative;
+	top:100px;
+  }
+  
+  .reel {
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+  }
+
+  .footer {
+	position: relative;
+	top: 800px;
+  }
+  .slide-img {
+	max-width: 85%;
   }
 }
 
@@ -414,21 +484,103 @@ body {
     line-height:1em;
   }
   h2 {
-    font-size:1.2em;
+    font-size:1.4em;
     line-height:1em;
     margin-top: 10px;
+	font-weight: bold;
   }
 
   h3 {
-    font-size:0.8em;
+    font-size:1.2em;
     line-height:0.8em;
+  }
+  
+  .f-left, .f-right {
+/*	width:100%;*/
+	display:block;
+	float:none;
+  }
+  
+  .us-pic , .us-text{
+	width:100%;
+  }
+  
+  #third-box {
+	height:700px;
+	margin: 10% 5%;
+	padding: 25px 3%;
+  }
+  
+  .arrow-btn {
+	position:relative;
+	top:150px;
+  }
+  
+  #show-lg {
+	width:0%;
+	display:none;
+  }
+  
+  #show-sm {
+	width:100%;
+	display:block;
+  }
+  
+  .reel {
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+  }
+
+  .footer {
+	position: relative;
+	top: 800px;
+  }
+  .slide-img {
+	max-width: 85%;
   }
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:335px) {
   h1 {
     margin: 10px auto 0 auto;
-    font-size:2em;
+    font-size:3em;
     line-height:1em;
   }
- }
+  h2 {
+    font-size:1.3em;
+    line-height:0.8em;
+    margin-top: 10px;
+	font-weight: bold;
+  }
+
+  h3 {
+    font-size:1.2em;
+    line-height:0.8em;
+  }
+  
+  .f-left, .f-right {
+	width:100%;
+  }
+  
+  #third-box {
+	height:750px;
+	margin: 10% 5%;
+	padding: 25px 3%;
+  }
+  
+  .arrow-btn {
+	position:relative;
+	top:200px;
+  }
+  
+  .footer {
+	position: relative;
+	top: 800px;
+  }
+  .slide-img {
+	max-width: 80%;
+  }
+}
+
+
