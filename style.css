@@ -28,15 +28,23 @@ h3 {
   line-height:1.5em;
 }
 
+.ulli {
+	margin: 0px;
+	padding: 0px;
+	text-indent:-1.125em;
+	margin-left: 4.125em;
+}
+
 li {
   position:relative;
-  margin-left: 50px;
-  padding-left: 0px;
+  padding: 5px 20px;
+	text-indent:-1.125em;
+  margin-left: 3.125em;
 }
 
 li+ul li {
   position:relative;
-  margin-left: 80px;
+  margin-left: 5em;
 }
 
 a {
@@ -261,7 +269,7 @@ body {
 	top: 25%;
 	width: 325px;
 	margin: 0 auto;
-	padding: 20px 70px 70px 10px;
+	padding: 20px 50px 70px 10px;
 	background-color: #fff;
 	text-align:left;
 	z-index: 2;
