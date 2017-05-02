@@ -31,7 +31,8 @@ h3 {
 li {
   position:relative;
   margin-left: 50px;
-  padding-left: 0px;
+  padding-left: 0.5em;
+  text-indent: -0.5em;
 }
 
 li+ul li {
@@ -583,4 +584,7 @@ body {
   }
 }
 
-
+.stay
+{
+	font-weight: bold;
+}
